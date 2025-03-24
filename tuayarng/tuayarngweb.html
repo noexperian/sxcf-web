@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SOMXAY COFFEE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Noto Sans Lao', sans-serif;
+        }
+
+        body,
+        html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+            background-image: url('./images/suan.png');
+            min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+            background-image: url("./images/tcf3.jpg");
+            min-height: 400px;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+            background-image: url("./images/tcf4.jpg");
+            min-height: 400px;
+        }
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-card w3-white w3-padding navbar">
+
+            <!-- โลโก้อยู่ซ้ายสุด -->
+            <a href="#home" class="navbar-logo">
+                <img src="./images/Asset 4.png" alt="SOMXAY Coffee">
+            </a>
+
+            <!-- เมนูอยู่ด้านขวา -->
+            <div class="navbar-menu">
+                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+                <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-coffee"></i>
+                    GREEN BEANS</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-red">
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+
+        </div>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ພວກເຮົາແມ່ນໃຜ?</h3>
+
+        <p> ບໍລິສັດພວກເຮົາ ໄດ້ເລີ່ມລົງມືປູກ-ບໍາລຸງລ້ຽງກາເຟຢ່າງຈິງຈັງ, ເຊິ່ງໄດ້ເລີ່ມໂຄງການມາແຕ່ເດືອນ 7 ປີ 2012
+            ຢູ່ເຂດບ້ານກົງຕູນ, ເມືອງປາກຊ່ອງ ແຂວງຈໍາປາສັກ. ປັດຈຸບັນ ບໍລິສັດມີເນື້ອທີ່ປູກກາເຟແລ້ວ 150 ເຮັກຕາ ໃນນັ້ນ
+            ມີເນື້ອທີ່ໃຫ້ໝາກຈໍານວນ 130 ເຮັກຕາ, ການປູກແມ່ນປູກເທື່ອລະຫນ້ອຍໃນແຕ່ລະປີ, ພ້ອມທັງສຶກສາແກ້ບັນຫາຄວາມສ່ຽງ
+            ຈາກພະຍາດ, ສັດຕູພືດ ເປັນຕົ້ນ: ເຊື້ອລາ, ເພັ້ຍ, ດ້ວງເຈາະລໍາ, ມອດເຈາະໝາກ, ຕົ້ນກາເຟເຫຼືອງຕາຍຫຼືບໍ່ສົມບູນ
+            ຍ້ອນຂາດທາດອາຫານ ແລະຜົນກະທົບຈາກໄພທໍາມະຊາດ, ແຫ້ງແລ້ງ, ນ້ຳໝອກກ້າມຕົກ (ນໍ້າໝອກເກືອ)
+            ອັນເປັນສາຍເຫດໃຫ້ຕົ້ນກາເຟຕາຍໝົດໃນຄືນດຽວໄດ້, ບັນຫາຕ່າງໆເຫຼົ່ານີ້ ບໍລິສັດພວກເຮົາສາມາດປ້ອງກັນ ແລະ ແກ້ໄຂ
+            ໄດ້ໂດຍພື້ນຖານ, ເຮັດໃຫ້ສວນກາເຟມີຄວາມອຸດົມສົມບູນ, ຕົ້ນກາເຟຂຽວງາມຕະຫຼອດ, ປີ 2018 ຫາປັດຈຸບັນ
+            ບໍ່ມີຕົ້ນກາເຟຕາຍຍ້ອນພະຍາດ, ບົ້ງແມງ ແລະ ໄພທໍາມະຊາດແຕ່ຢ່າງໃດ ທັງຍັງໃຫ້ໝາກຢ່າງສະຫມໍ່າສະເໝີ ແລະ ເພີ່ມຂຶ້ນ.
+            ສະຫຼຸບໄດ້ວ່າ ມາຮອດ ປະຈຸບັນ ບໍລິສັດ ສາມາດສໍາເລັດບາດກ້າວທໍາອິດຂອງການປູກ ແລະ ບໍາລຸງລ້ຽງກາເຟໃຫ້ມີສະມັດຕະພາບສູງ,
+            ມີຄຸນນະພາບ ແລະ ມີຕະຫຼາດທີ່ຫມັ້ນຄົງ.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>ກ່ຽວກິບບໍລິສັດພວກເຮົາ</b></p><br>
+                <img src="./images/snng.jpeg" class="w3-round w3-image w3-opacity w3-opacity-off" width="500"
+                    height="333">
+            </div>
+
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>ຈາກການຈັດຕັ້ງປະຕິບັດຕົວຈິງ ແລະ ບົດຮຽນທີ່ຖອດຖອນໄດ້ ສາມາດສະຫຼຸບໄດ້ວ່າ: ເຂດພູພຽງບໍລະເວນ
+                    ມີທ່າແຮງສູງໃນການຜະລິດກາເຟ,
+                    ສາມາດຍົກສະມັດຕະພາບການຜະລິດໃຫ້ສູງເທົ່າທຽມກັບສະມັດຕະພາບຂອງບັນດາປະເທດຕ່າງໆໄດ້, ບົດຮຽນ
+                    ຂອງບໍລິສັດສາມາດເຮັດໃຫ້ສະມັດຕະພາບກາເຟ (Arabica) ບັນລຸໄດ້ 15-20 ໂຕນຕໍ່ເຮັກຕາ ແລະ ກາເຟ (Robusta) ໄດ້
+                    25-30 ໂຕນ ຕໍ່ເຮັກຕາ ຢ່າງສະໝໍ່າສະເໝີ (ທຸກປີ), ຖ້າບັນລຸໄດ້ຕາມນີ້ ກໍຈະມີລາຍຮັບ ບໍ່ຕໍ່າກວ່າ 40-60
+                    ລ້ານກີບ ຕໍ່ເຮັກຕາ, ຖ້າໄລ່ລຽງກັບຄ່າໃຊ້ຈ່າຍຕົ້ນທຶນ ເຫັນວ່າກຸ້ມຄ່າ ແລະ ມີລາຍຮັບດີ.
+                    ເພື່ອປະກອບສ່ວນສົ່ງເສີມການປູກ-ບໍາລຸງລ້ຽງກາເຟ ຢູ່ພູພຽງບໍລະເວນໃຫ້ມີສະມັດຕະພາບສູງ ແລະ ຄຸນນະພາບດີ
+                    ຕາມບົດຮຽນຕົວຈິງທີ່ບໍລິສັດໄດ້ດໍາເນີນມາ, ຊຶ່ງໃນປີ 2020 ຜ່ານມາ ໄດ້ມີກຸ່ມສະຫະກອນຜູ້ຜະລິດ ແລະ ສົ່ງອອກກາເຟ
+                    ຂອງເມືອງປາກຊ່ອງ, ເມືອງເລົ່າງາມ, ເມືອງທ່າແຕງ ແລະ
+                    ຈາກບໍລິສັດຜູ້ລົງທຶນປູກກາເຟເປັນສິນຄ້າຂອງຕ່າງປະເທດຈໍານວນໜຶ່ງເຂົ້າມາທັດສະນະສຶກສາ, ແລກປ່ຽນຖອດຖອນບົດຮຽນ
+                    ແລະ ໄດ້ຢັ້ງຢືນວ່າ ການພັດທະນາກາເຟ ຂອງຕົນມີສະມັດຕະພາບສູງ, ຄຸນນະພາບດີ ແລະ ມີຕະຫຼາດທີ່ໝັ້ນຄົງ.
+                    ບົນຈິດໃຈດັ່ງກ່າວ, ບໍລິສັດ ຈຶ່ງມີແນວຄວາມຄິດຈະສົ່ງເສີມ ແລະ ຜັນຂະຫຍາຍການຜະລິດກາເຟທີ່ມີສະມັດຕະພາບສູງ,
+                    ມີຄຸນນະພາບ ແລະ ຕະຫຼາດຫມັ້ນຄົງ ຮ່ວມກັບປະຊາຊົນຊາວສວນຜູ້ສະໝັກໃຈ ປະຕິບັດນະໂຍບາຍ 2+3 ຂອງລັດຖະບານລາວ,
+                    ພ້ອມນັ້ນ ຂໍສະເໝີຕໍ່ພາກລັດຊ່ວຍສ້າງເງື່ອນໄຂໃນການເຂົ້າເຖິງແຫຼ່ງທຶນ ສົ່ງເສີມດອກເບ້ຍບໍ່ສູງໃຫ້ບໍລິສັດ ແລະ
+                    ຊາວສວນໄດ້ກູ້ຢືມເພື່ອທໍາການຜະລິດ ຊຶ່ງຕ້ອງມີຕົ້ນທຶນການໃຊ້ຈ່າຍ ແລະ
+                    ຄວນປັບປຸງຮູບແບບການຈັດຕັ້ງການຜະລິດເປັນກຸ່ມ ຫຼື ສະຫະກອນ ເພື່ອໃຫ້ຜູ້ຜະລິດມີຄວາມເຂັ້ມແຂງ ແລະ
+                    ຮັບປະກັນໄດ້ປະລິມານ ແລະ ຄຸນນະພາບ;
+                    ເຈລະຈາເປີດຕະຫຼາດກາເຟກັບຕ່າງປະເທດໃຫ້ກວ້າງຂວາງໂດຍສະເພາະກັບປະເທດເພື່ອນບ້ານ.</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">ສິນຄ້າຂອງພວກເຮົາ</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MY PRODUCTS</h3>
+        <p class="w3-center"><em> Click on the images to make
+                them bigger</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="./images/md.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="The mist over the mountains">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/mk.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Coffee beans">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/mkw.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Bear closeup">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="./images/kl.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Quiet ocean">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">WHERE WE WORK</h3>
+        <p class="w3-center"><em></em></p>
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <img src="./images/snng.jpeg" class="w3-image w3-round" style="width:100%">
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> kongtoon,
+                    Laos<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +856 20
+                    54105888
+                    <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
+                    somhack8989@yahoo.com<br>
+
+
+                </div>
+                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+        </div>
+        <p>© 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+
+    <!-- รวมไฟล์ JavaScript -->
+    <script src="script.js"></script>
+ 
+
+
+</body>
+
+</html>
